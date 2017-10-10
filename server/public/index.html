@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="vendors/jquery.js"></script>
+  <script src="scripts/client.js"></script>
+  <title>Monthly Salary Expenses</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MONTHLY SALARY EXPENSES</h1>
+    </header>
+    <section id="inputSection">
+      <div>
+        <h2>Enter Employee Information</h2>
+        <div id="name">
+          <input id="firstName" type="text" placeholder="First Name" >
+          <input id="lastName" type="text" placeholder="Last Name">
+        </div>
+        <input id="idNumber" type="number" placeholder="ID Number">
+        <input id="jobTitle" type="text" placeholder="Job Title">
+        <input id="salary" type="number" placeholder="Annual Salary">
+        <button id="submit">Submit</button> <span id="incomplete"></span>
+      </div>
+    </section>
+    <section id="monthlyExpensesSection">
+      <h2>Monthly Expenses: $<span id="monthlyExpenses">0</span></h2>
+    </section>
+    <section id="employeeInfoSection">
+      <div>
+        <h2>Employees</h2>
+        <table id="employeeTable">
+          <thead>
+            <th>Name</th>
+            <th>ID Number</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th></th>
+          </thead>
+          <tbody id="employeeTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
