@@ -1,5 +1,5 @@
 console.log('js sourced')
-$(main);
+$(document).ready(main);
 
 var employees = [];
 
